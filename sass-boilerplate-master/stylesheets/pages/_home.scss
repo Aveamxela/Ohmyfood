@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.reservez{
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

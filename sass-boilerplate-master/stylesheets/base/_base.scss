@@ -1,5 +1,9 @@
+body{
+  margin:14px 0px 22px 0px;
+}
 html {
   box-sizing: border-box;
+  max-width: 375px;
 }
 
 *,
@@ -8,12 +12,3 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  color: $brand-color;
-  text-decoration: none;
-
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
-}

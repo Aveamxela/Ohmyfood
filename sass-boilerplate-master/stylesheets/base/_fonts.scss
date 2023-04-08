@@ -1,13 +1,39 @@
-// -----------------------------------------------------------------------------
-// This file contains all @font-face declarations, if any.
-// -----------------------------------------------------------------------------
-.Ville .btn .category-fonctionnement .start-footerRoboto{
-    font: 500 16px;
+/*Inutile ?*/
+
+body{
+    font-family:'Roboto', sans-serif;
+} 
+.homepage{
+    h1{
+    font: 700 24px 'Roboto';
+    }
+    h2 {
+    font: 300 18px 'Roboto';
+    }
+    h3 {
+    font: 500 16px 'Roboto';
+    }
+    h4 {
+    font: 700 18px 'Roboto';
+    }
+    p {
+    font: 300 17px 'Roboto';
+    }
+    .end-footer {
+    font: 400 16px 'Roboto';
+    }
 }
-
-
-@font-face{
-font-family:'Roboto';
-font-family: 'Shrikhand';
-src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+.menu{
+    h1 {
+    font: 400 italic 28px 'Shrikhand';
+    }
+    h2 {
+    font: 300 16px 'Roboto';
+    }
+    h3 {
+        font:300 15px 'Roboto';
+    }
+    .prix{
+        font:700 15px 'Roboto';
+    }
 }
