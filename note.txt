@@ -1,0 +1,12 @@
+Fin footer : Roboto 400 16px
+Titre homepage : robot 700 24px
+Suos titre menu : roboto 300 18px
+Nom restaurant : Roboto 700 18px
+Ville restaurant : Roboto 300 17px
+Btn nouveau : Roboto 500 14px 
+/*menu*/
+Nom restaurant menu : Shrikhand 400 italic 28px 
+Categorie menu : roboto 300 16px
+Nom plat : Roboto 500 18px
+Accompagnement plat : Roboto 300 15.04px
+Prix : Roboto 700 15px
