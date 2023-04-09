@@ -10,5 +10,18 @@
     padding-top: 40px;
 }
 .all-fonctionnement{
-    padding: 48 20 68 20;
+    padding: 48px 20px 68px 20px;
+}
+.numero-fonctionnement{
+    background-color: $main-color;
+    border-radius:20px;
+    position:relative;
+    right:10px;
+    padding: 4px 8px;
+}
+i {
+    color: $icone-grey;
+}
+.icone-color{
+    color:$main-color;
 }
