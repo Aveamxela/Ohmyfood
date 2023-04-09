@@ -4,10 +4,21 @@
 .btn{
     display: flex;
     align-items: center;
-    background:linear-gradient($main-color,#FF79DA);
+    background: linear-gradient(356deg, #9356DC, #FF79DA 123.93%);
     border-radius: 25px;
     height: 50px;
     color:white;
     border:none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 24px 0 52px 0;
+    &:hover{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        filter: brightness(105%);
+    }
+}
+
+.fonctionnement{
+    background: red;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
 }
