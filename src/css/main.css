@@ -1,6 +1,10 @@
+@charset "UTF-8";
 /*Couleur*/ /*Rien pour le moment*/
 body {
   margin: 14px 0px 22px 0px;
+  position: relative;
+  /*pour footer*/
+  min-height: 100vh;
 }
 
 html {
@@ -8,7 +12,7 @@ html {
   max-width: 375px;
 }
 
-h1 {
+h1, h4, p {
   margin: 0px;
 }
 
@@ -16,6 +20,10 @@ h1 {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+img {
+  object-fit: cover;
 }
 
 /*Inutile ?*/
@@ -38,9 +46,8 @@ body {
 .homepage p {
   font: 300 17px "Roboto";
 }
-.homepage .numero-fonctionnement {
+.homepage .numero-fonctionnement, .homepage .btn-nouveau {
   font: 500 14px "Roboto";
-  color: white;
 }
 .homepage .end-footer {
   font: 400 16px "Roboto";
@@ -86,6 +93,16 @@ header {
   margin-right: 17px;
 }
 
+footer {
+  padding: 22px 25px 22px 25px;
+  background-color: #353535;
+  position: fixed;
+  /*absolute après*/
+  bottom: 0;
+  color: white;
+  width: 100%;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -104,15 +121,100 @@ header {
   filter: brightness(105%);
 }
 
-.fonctionnement {
-  background: #F6F6F6;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  margin-top: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 27px;
+.card-restaurants {
+  margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 340px;
+  height: 251px;
+}
+
+.img-card {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 15px 15px 0 0;
+}
+
+.btn-nouveau {
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px 9px 6px 9px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  position: relative;
+  bottom: 156px;
+  left: 256px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.bottom-card-text {
+  padding-left: 13px;
+}
+
+/*
+.heart{
+    width: 22px;
+    height: 21px;
+    display: block;
+    background-color: #c35454;
+    position: relative;
+}
+
+.full{
+    transition: all 0.2s linear 0s;
+    opacity: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.full:hover {
+    width: 22px;
+    height: 21px;
+    background-color: #33BEE5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+*/
+.heart {
+  position: relative;
+}
+
+.heart i {
+  transition: all 0.6s ease-in-out;
+}
+
+.heart .empty {
+  background: white;
+  font-weight: 200;
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  opacity: 1;
+}
+
+.heart .full {
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  right: 25px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0;
+}
+
+.heart:hover .full {
+  opacity: 1;
+}
+
+.heart:hover .empty {
+  opacity: 0;
 }
 
 .reservez {
@@ -128,18 +230,46 @@ header {
   padding: 48px 20px 68px 20px;
 }
 
+.fonctionnement {
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+}
+
 .numero-fonctionnement {
   background-color: #9356DC;
   border-radius: 20px;
   position: relative;
   right: 10px;
   padding: 4px 8px;
+  color: white;
 }
 
-i {
+.icone-grey {
   color: #7E7E7E;
 }
 
 .icone-color {
   color: #9356DC;
+}
+
+.all-card {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 55px 15px 55px 15px;
 }

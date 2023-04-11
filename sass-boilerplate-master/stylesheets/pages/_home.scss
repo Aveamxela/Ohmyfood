@@ -12,16 +12,40 @@
 .all-fonctionnement{
     padding: 48px 20px 68px 20px;
 }
+.fonctionnement {
+    background: $background;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 27px;
+}
 .numero-fonctionnement{
     background-color: $main-color;
     border-radius:20px;
     position:relative;
     right:10px;
     padding: 4px 8px;
+    color: white;
 }
-i {
+.icone-grey {
     color: $icone-grey;
 }
 .icone-color{
     color:$main-color;
+}
+.all-card {
+    display: flex;
+    justify-content: center;
+}
+.bottom-card-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.restaurants{
+    background-color: $background;
+    padding:55px 15px 55px 15px;
 }

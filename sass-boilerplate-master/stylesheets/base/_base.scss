@@ -1,11 +1,16 @@
 body{
   margin:14px 0px 22px 0px;
+  position: relative;
+  /*pour footer*/
+  min-height: 100vh;
 }
+
 html {
   box-sizing: border-box;
   max-width: 375px;
 }
-h1{
+
+h1, h4, p{
   margin:0px;
 }
 
@@ -13,5 +18,8 @@ h1{
 *::before,
 *::after {
   box-sizing: inherit;
+}
+img{
+  object-fit:cover;
 }
 
