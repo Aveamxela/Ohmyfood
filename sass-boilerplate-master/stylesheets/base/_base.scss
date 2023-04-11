@@ -1,8 +1,11 @@
+html,
+body {
+  height: 100%;
+}
 body{
   margin:14px 0px 22px 0px;
-  position: relative;
+  padding: 0;
   /*pour footer*/
-  min-height: 100vh;
 }
 
 html {

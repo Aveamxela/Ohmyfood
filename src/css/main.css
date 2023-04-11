@@ -1,10 +1,13 @@
-@charset "UTF-8";
 /*Couleur*/ /*Rien pour le moment*/
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 14px 0px 22px 0px;
-  position: relative;
+  padding: 0;
   /*pour footer*/
-  min-height: 100vh;
 }
 
 html {
@@ -96,8 +99,6 @@ header {
 footer {
   padding: 22px 25px 22px 25px;
   background-color: #353535;
-  position: fixed;
-  /*absolute après*/
   bottom: 0;
   color: white;
   width: 100%;
@@ -155,32 +156,6 @@ footer {
   padding-left: 13px;
 }
 
-/*
-.heart{
-    width: 22px;
-    height: 21px;
-    display: block;
-    background-color: #c35454;
-    position: relative;
-}
-
-.full{
-    transition: all 0.2s linear 0s;
-    opacity: 0;
-    position: relative;
-    z-index: 0;
-}
-
-.full:hover {
-    width: 22px;
-    height: 21px;
-    background-color: #33BEE5;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    opacity: 1;
-}
-*/
 .heart {
   position: relative;
 }
@@ -194,6 +169,7 @@ footer {
   font-weight: 200;
   font-size: 22px;
   position: absolute;
+  bottom: 0px;
   right: 25px;
   opacity: 1;
 }
@@ -202,10 +178,11 @@ footer {
   font-size: 22px;
   font-weight: 900;
   position: absolute;
+  bottom: 0px;
   right: 25px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#9356DC, #FF79DA);
   opacity: 0;
 }
 
