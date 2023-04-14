@@ -38,6 +38,7 @@
 }
 .all-card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .bottom-card-text{

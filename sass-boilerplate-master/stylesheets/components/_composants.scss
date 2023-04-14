@@ -48,6 +48,7 @@
 .bottom-card-text{
     padding-left:13px;
 }
+
 .heart {
     position: relative;
 }
@@ -71,6 +72,7 @@
     bottom: 0px;
     right: 25px;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     background-image: linear-gradient($main-color, #FF79DA);
     opacity: 0;

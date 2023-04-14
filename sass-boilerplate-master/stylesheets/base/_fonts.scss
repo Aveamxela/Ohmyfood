@@ -2,6 +2,7 @@
 
 body{
     font-family:'Roboto', sans-serif;
+    font-family: 'Shrikhand', sans-serif;
 } 
 .homepage{
     h1{
@@ -15,6 +16,9 @@ body{
     }
     h4 {
     font: 700 18px 'Roboto';
+    }
+    h5{
+        font: 400 italic 18px 'Shrikhand';
     }
     p {
     font: 300 17px 'Roboto';

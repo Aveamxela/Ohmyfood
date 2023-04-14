@@ -3,9 +3,41 @@
 // -----------------------------------------------------------------------------
 footer{
     padding:22px 25px 22px 25px;
+    display: flex;
+    flex-direction: column;
     background-color: #353535;
-   
+    position: relative;
     bottom: 0;
     color:white;
-    width: 100%;    
+    width: 100%;
+}
+.logo{
+    margin:0;
+}
+.start-footer{
+    padding-top: 16px;
+}
+.i-text{
+    display: flex;
+    align-items: center;
+    gap:11px;
+    padding-bottom: 7px;
+}
+.footer-text{
+    margin:0;
+}
+
+.icone-footer{
+    width: 11px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.end-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
