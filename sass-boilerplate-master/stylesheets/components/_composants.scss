@@ -51,9 +51,12 @@
 
 .heart {
     position: relative;
+    bottom: 20px;
 }
-.heart i{
-        transition: all 0.6s ease-in-out;
+
+.heart i {
+    transition: all 0.6s ease-in-out;
+    
 }
 
 .heart .empty {
@@ -65,7 +68,8 @@
     right: 25px;
     opacity: 1;
 }
-.heart .full{
+
+.heart .full {
     font-size: 22px;
     font-weight: 900;
     position: absolute;
@@ -78,9 +82,82 @@
     opacity: 0;
 }
 
-.heart:hover .full{
+.heart:hover .full {
     opacity: 1;
 }
-.heart:hover .empty{
+
+.heart:hover .empty {
     opacity: 0;
+}
+/*
+.check-heart i{
+        transition: all 0.6s ease-in-out;
+        opacity: 1;
+}
+.empty {
+    background: white;
+    font-weight: 200;
+    font-size: 22px;
+    bottom: 0px;
+    right: 25px;
+    opacity: 1;
+}
+.full{
+    font-size: 22px;
+    font-weight: 900;
+    bottom: 0px;
+    right: 25px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient($main-color, #FF79DA);
+    opacity: 0;
+}
+
+
+.check-heart{
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    >input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+
+    }
+
+.checkbox__icon {
+    display: inline-block;
+    opacity: 1;
+    @extend .empty;
+    input[type="checkbox"]:checked~& {
+        @extend .full;
+    }
+}
+*/
+
+/*Menu*/
+.card-menu{
+    display: grid;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 12px 15px 12px 15px;
+    gap:5px;
+    margin-top:12px;
+}
+.bottom-card{
+    display: flex;
+    justify-content: space-between;
+}
+.menu .heart{
+    position: relative;
+    top: 10px;
+}
+.menu .btn{
+    margin: 24px 0 40px 0;
 }

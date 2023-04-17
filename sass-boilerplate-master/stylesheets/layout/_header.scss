@@ -5,19 +5,35 @@ header{
     display:flex;
     flex-direction:column;
 }
-.logo-retour {
-    display:flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.homepage{
+    .logo-retour {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
 }
-.fa-arrow-left {
-    display:none;
+    .fa-arrow-left {
+        display: none;
+    }
 }
+.menu{
+    .logo-retour{
+        display: flex;
+        align-items: center;
+        gap:64px;
+        margin-bottom: 5px;
+    }
+    .fa-arrow-left {
+        display: flex;
+        margin-left:23px;
+    }
+}
+
 .location{
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
+    padding: 15px 0 15px 0;
 }
 .fa-location-dot{
     margin-right:17px;
