@@ -150,9 +150,47 @@
     gap:5px;
     margin-top:12px;
 }
+.card-menu-entrees  {
+    animation: card-animation-entrees 1s;
+}
+.card-menu-plats{
+    animation: card-animation-plats 1s;
+}
+.card-menu-desserts{
+    animation: card-animation-desserts 1s;
+}
+@keyframes card-animation-entrees{
+    0% {
+        transform: translate(500px)
+    }
+    100% {
+        transform:translate(0px)
+    }
+}
+@keyframes card-animation-plats {
+    0% {
+        transform: translate(1000px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+@keyframes card-animation-desserts {
+    0% {
+        transform: translate(1500px)
+    }
+
+    100% {
+        transform: translate(0px)
+    }
+}
+
+
 .bottom-card{
     display: flex;
     justify-content: space-between;
+    text-overflow: ellipsis;
 }
 .menu .heart{
     position: relative;
@@ -160,4 +198,55 @@
 }
 .menu .btn{
     margin: 24px 0 40px 0;
+}
+
+
+
+.card-menu{
+    position:relative;
+    overflow: hidden;
+    .check {
+        position: absolute;
+        visibility: collapse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 59px;
+        height: 69px;
+        top: 0px;
+        right: 0px;
+        background: $secondary-color;
+        border-radius: 0px 15px 15px 0px;
+}
+    .fa-circle-check {
+        font-size: 20px;
+        color: white;
+}
+}
+.card-menu:hover{
+    .check{
+        visibility: visible;
+        animation: check-menu 70ms ease-in-out;
+    }
+    .bottom-card{
+        width:79%;
+        gap:5%;
+    }
+    .accompagnement {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+    }
+    .prix {
+        animation: check-menu 70ms ease-in-out;
+}
+}
+
+@keyframes check-menu {
+    0%{
+        transform: translateX(50px)
+    }
+    100%{
+        transform: translateX(0px)
+    }
 }
