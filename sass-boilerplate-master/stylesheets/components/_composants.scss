@@ -20,15 +20,20 @@
 }
 
 .card-restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
     margin-top:20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    width: 340px;
-    height: 251px;
+    width: 100%;
+    height: 100%;
 }
 .img-card {
     width: 100%;
+    height: 70%;
     aspect-ratio: 2/1;
     border-radius: 15px 15px 0 0;
 }
@@ -38,42 +43,39 @@
     padding: 7px 9px 6px 9px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
-    position:relative;
-    bottom:156px;
-    left:256px;
+    position:absolute;
+    top:15px;
+    right:15px;
 }
 .hide{
     visibility: hidden;
 }
 .bottom-card-text{
-    padding-left:13px;
-}
-
-.heart {
-    position: relative;
-    bottom: 20px;
+    padding:16px 13px 12px 13px;
 }
 
 .heart i {
     transition: all 0.6s ease-in-out;
-    
 }
 
 .heart .empty {
-    background: white;
     font-weight: 200;
     font-size: 22px;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     right: 25px;
     opacity: 1;
 }
+.heart .empty .grey{
+    background-color:none;
+}
+
 
 .heart .full {
     font-size: 22px;
     font-weight: 900;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     right: 25px;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -89,59 +91,9 @@
 .heart:hover .empty {
     opacity: 0;
 }
-/*
-.check-heart i{
-        transition: all 0.6s ease-in-out;
-        opacity: 1;
-}
-.empty {
-    background: white;
-    font-weight: 200;
-    font-size: 22px;
-    bottom: 0px;
-    right: 25px;
-    opacity: 1;
-}
-.full{
-    font-size: 22px;
-    font-weight: 900;
-    bottom: 0px;
-    right: 25px;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient($main-color, #FF79DA);
-    opacity: 0;
-}
-
-
-.check-heart{
-    position: relative;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    >input[type="checkbox"] {
-            position: absolute;
-            opacity: 0;
-            z-index: -1;
-        }
-
-    }
-
-.checkbox__icon {
-    display: inline-block;
-    opacity: 1;
-    @extend .empty;
-    input[type="checkbox"]:checked~& {
-        @extend .full;
-    }
-}
-*/
 
 /*Menu*/
-.card-menu{
+.card-menu{ 
     display: grid;
     background: #FFFFFF;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -192,9 +144,13 @@
     justify-content: space-between;
     text-overflow: ellipsis;
 }
-.menu .heart{
+.name-restaurant{
     position: relative;
-    top: 10px;
+}
+.menu .heart{
+    position: absolute;
+    bottom: -12px;
+    right: 20px;
 }
 .menu .btn{
     margin: 24px 0 40px 0;
@@ -229,15 +185,16 @@
         animation: check-menu 70ms ease-in-out;
     }
     .bottom-card{
-        width:79%;
         gap:5%;
     }
     .accompagnement {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+            width: 79%;
     }
     .prix {
+        padding-right: 56px;
         animation: check-menu 70ms ease-in-out;
 }
 }
