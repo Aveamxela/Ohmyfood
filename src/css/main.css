@@ -32,7 +32,6 @@ a {
 /*Inutile ?*/
 body {
   font-family: "Roboto", sans-serif;
-  font-family: "Shrikhand", sans-serif;
 }
 
 .homepage h1 {
@@ -66,7 +65,7 @@ body {
 .menu h2 {
   font: 300 16px "Roboto";
 }
-.menu h3 {
+.menu h3, .menu #restaurants {
   font: 500 18px "Roboto";
 }
 .menu p {
@@ -177,6 +176,7 @@ a > p {
   justify-content: center;
   background: linear-gradient(356deg, #9356DC, #FF79DA 123.93%);
   border-radius: 25px;
+  padding: 13px 18.5px;
   width: 218px;
   height: 50px;
   color: white;
@@ -239,10 +239,7 @@ a > p {
   bottom: 20px;
   right: 25px;
   opacity: 1;
-}
-
-.heart .empty .grey {
-  background-color: none;
+  overflow: hidden;
 }
 
 .heart .full {
@@ -256,14 +253,17 @@ a > p {
   -webkit-background-clip: text;
   background-image: linear-gradient(#9356DC, #FF79DA);
   opacity: 0;
+  transform: translateY(10%);
 }
 
 .heart:hover .full {
   opacity: 1;
+  transform: translateY(0%);
 }
 
 .heart:hover .empty {
   opacity: 0;
+  overflow: hidden;
 }
 
 /*Menu*/
@@ -344,7 +344,7 @@ a > p {
   justify-content: center;
   align-items: center;
   width: 59px;
-  height: 69px;
+  height: 100%;
   top: 0px;
   right: 0px;
   background: #99E2D0;
@@ -361,15 +361,16 @@ a > p {
 }
 .card-menu:hover .bottom-card {
   gap: 5%;
+  justify-content: flex-start;
 }
 .card-menu:hover .accompagnement {
-  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 79%;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .card-menu:hover .prix {
-  padding-right: 56px;
+  width: 35%;
   animation: check-menu 70ms ease-in-out;
 }
 
