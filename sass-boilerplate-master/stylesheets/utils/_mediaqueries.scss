@@ -1,0 +1,60 @@
+@media screen and (min-width:992px) {
+    .fonctionnement-trois {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:5%;
+    }
+
+    .fonctionnement {
+        width: 320px;
+    }
+
+    .all-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+    }
+    .card-restaurants {
+        width: 45%;
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+        }
+    
+    a {
+        width: 100%;
+        height: 70%;
+    }
+    .top-card {
+        height: 100%;
+    }
+    .img-card{
+        height: 100%;
+    }
+    .heart .empty {
+        bottom:30px;
+    }
+    .heart .full {
+        bottom: 30px;
+    }
+    footer{
+        height: 114px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .start-footer{
+        display: flex;
+        gap:3%;
+    }
+    .end-footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+}

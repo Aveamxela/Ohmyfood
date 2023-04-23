@@ -9,8 +9,12 @@
     align-items: center;
     padding-top: 40px;
 }
+.reservez .h1{
+    padding: 0 60px 0 60px;
+}
 .all-fonctionnement{
-    padding: 48px 20px 68px 20px;
+        padding: 48px 8% 68px 8%;
+        
 }
 .fonctionnement {
     background: $background;
@@ -49,5 +53,7 @@
 }
 .restaurants{
     background-color: $background;
-    padding:55px 15px 55px 15px;
+}
+.restaurants-all-card{
+    padding: 55px 8% 55px 8%;
 }
