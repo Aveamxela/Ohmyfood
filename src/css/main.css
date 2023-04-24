@@ -72,6 +72,9 @@ body {
 .menu h3, .menu #restaurants {
   font: 500 18px "Roboto";
 }
+.menu .footer-text {
+  font: 500 16px "Roboto";
+}
 .menu p {
   font: 300 15px "Roboto";
 }
@@ -239,6 +242,7 @@ a > p {
 .heart .empty {
   font-weight: 200;
   font-size: 22px;
+  padding: 1px;
   position: absolute;
   bottom: 20px;
   right: 25px;
@@ -257,6 +261,7 @@ a > p {
 .heart .full {
   font-size: 22px;
   font-weight: 900;
+  padding: 1px;
   position: absolute;
   bottom: 20px;
   right: 25px;
@@ -647,32 +652,33 @@ a > p {
     bottom: 30px;
   }
   footer {
-    position: relative;
+    gap: 25px;
     height: 114px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
   .start-footer {
     display: flex;
     white-space: nowrap;
-    justify-content: center;
-    gap: 10%;
-    position: absolute;
-    bottom: 27px;
-    right: 440px;
+    gap: 7px;
+    padding: 0;
+    order: 2;
+  }
+  .i-text {
+    padding: 0;
   }
   .end-footer {
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    justify-content: center;
-    gap: 10%;
-    position: absolute;
-    bottom: 33px;
-    right: 180px;
+    gap: 7px;
+    order: 1;
   }
   .logo {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+    padding-right: 25px;
+    margin-bottom: -3px;
   }
   .background-menu {
     margin: 0px 8%;
