@@ -86,6 +86,8 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  position: relative;
+  gap: 5px;
 }
 
 .homepage .logo-retour {
@@ -100,12 +102,16 @@ header {
 .menu .logo-retour {
   display: flex;
   align-items: center;
-  gap: 64px;
   margin-bottom: 5px;
 }
 .menu .fa-arrow-left {
   display: flex;
   margin-left: 23px;
+}
+.menu .logo-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .location {
@@ -240,6 +246,14 @@ a > p {
   overflow: hidden;
 }
 
+.menu .empty {
+  right: 0;
+}
+
+.menu .heart .full {
+  right: 0px;
+}
+
 .heart .full {
   font-size: 22px;
   font-weight: 900;
@@ -266,11 +280,10 @@ a > p {
 
 /*Menu*/
 .card-menu {
-  display: grid;
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 12px 15px 12px 15px;
+  padding: 12px 0 12px 15px;
   gap: 5px;
   margin-top: 12px;
 }
@@ -315,6 +328,7 @@ a > p {
   display: flex;
   justify-content: space-between;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .name-restaurant {
@@ -335,6 +349,10 @@ a > p {
   position: relative;
   overflow: hidden;
 }
+.card-menu .prix {
+  position: absolute;
+  right: 4%;
+}
 .card-menu .check {
   position: absolute;
   visibility: collapse;
@@ -353,22 +371,26 @@ a > p {
   color: white;
 }
 
+.accompagnement {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 86%;
+}
+
 .card-menu:hover .check {
   visibility: visible;
   animation: check-menu 70ms ease-in-out;
 }
-.card-menu:hover .bottom-card {
-  gap: 5%;
-  justify-content: flex-start;
-}
 .card-menu:hover .accompagnement {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
+  padding-right: 5px;
+  width: 65%;
+}
+.card-menu:hover .bottom-card .accompagnement {
+  width: 65%;
 }
 .card-menu:hover .prix {
-  width: 35%;
+  right: 74px;
   animation: check-menu 70ms ease-in-out;
 }
 
@@ -503,8 +525,8 @@ a > p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 27px;
-  padding: 28px 0 28px 0;
+  gap: 23px;
+  padding: 28px 38px 28px 0;
 }
 
 .numero-fonctionnement {
@@ -547,7 +569,7 @@ a > p {
 .background-menu {
   background: #F6F6F6;
   border-radius: 40px 40px 0px 0px;
-  padding: 0px 13px;
+  padding: 0px 4%;
   position: relative;
   bottom: 60px;
   margin-bottom: -60px;
@@ -555,6 +577,7 @@ a > p {
 
 .img-header {
   height: 275px;
+  object-position: 50% 60%;
 }
 
 .name-restaurant {
@@ -624,18 +647,34 @@ a > p {
     bottom: 30px;
   }
   footer {
+    position: relative;
     height: 114px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
   }
   .start-footer {
     display: flex;
-    gap: 3%;
+    white-space: nowrap;
+    justify-content: center;
+    gap: 10%;
+    position: absolute;
+    bottom: 27px;
+    right: 440px;
   }
   .end-footer {
     display: flex;
     flex-direction: row;
+    white-space: nowrap;
+    justify-content: center;
+    gap: 10%;
+    position: absolute;
+    bottom: 33px;
+    right: 180px;
+  }
+  .logo {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+  .background-menu {
+    margin: 0px 8%;
   }
 }

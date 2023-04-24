@@ -42,19 +42,35 @@
         bottom: 30px;
     }
     footer{
+        position: relative;
         height: 114px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
     }
     .start-footer{
         display: flex;
-        gap:3%;
+        white-space: nowrap;
+        justify-content: center;
+        gap:10%;
+        position: absolute;
+        bottom: 27px;
+        right: 440px;
     }
     .end-footer{
         display: flex;
         flex-direction: row;
+        white-space: nowrap;
+        justify-content: center;
+        gap:10%;
+        position: absolute;
+        bottom: 33px;
+        right: 180px;
+    }
+    .logo{
+        position: absolute;
+        bottom:30px;
+        right:30px;
+    }
+    .background-menu{
+        margin: 0px 8%;
     }
 
 }

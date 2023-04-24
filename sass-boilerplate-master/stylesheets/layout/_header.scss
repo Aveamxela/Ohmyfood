@@ -4,6 +4,8 @@
 header{
     display:flex;
     flex-direction:column;
+    position: relative;
+    gap:5px;
 }
 .homepage{
     .logo-retour {
@@ -19,12 +21,16 @@ header{
     .logo-retour{
         display: flex;
         align-items: center;
-        gap:64px;
         margin-bottom: 5px;
     }
     .fa-arrow-left {
         display: flex;
         margin-left:23px;
+    }
+    .logo-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

@@ -68,7 +68,12 @@
     opacity: 1;
     overflow: hidden;
 }
-
+.menu .empty{
+    right:0;
+}
+.menu .heart .full{
+    right:0px;
+}
 .heart .full {
     font-size: 22px;
     font-weight: 900;
@@ -95,11 +100,10 @@
 
 /*Menu*/
 .card-menu{ 
-    display: grid;
     background: #FFFFFF;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    padding: 12px 15px 12px 15px;
+    padding: 12px 0 12px 15px;
     gap:5px;
     margin-top:12px;
 }
@@ -144,6 +148,7 @@
     display: flex;
     justify-content: space-between;
     text-overflow: ellipsis;
+    width: 100%;
 }
 .name-restaurant{
     position: relative;
@@ -162,6 +167,10 @@
 .card-menu{
     position:relative;
     overflow: hidden;
+    .prix{
+        position: absolute;
+        right:4%;
+    }
     .check {
         position: absolute;
         visibility: collapse;
@@ -180,23 +189,26 @@
         color: white;
 }
 }
+.accompagnement {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 86%;
+}
 .card-menu:hover{
     .check{
         visibility: visible;
         animation: check-menu 70ms ease-in-out;
     }
-    .bottom-card{
-        gap:5%;
-        justify-content: flex-start;
-    }
     .accompagnement {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 100%;
+        padding-right:5px;
+        width: 65%;
+        }
+    .bottom-card .accompagnement{
+        width: 65%;
     }
     .prix {
-        width: 35%;
+        right: 74px;
         animation: check-menu 70ms ease-in-out;
 }
 }
