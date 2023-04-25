@@ -606,6 +606,9 @@ a > p {
 }
 
 @media screen and (min-width: 768px) {
+  .book h1 br {
+    display: none;
+  }
   .functioning3 {
     display: flex;
     flex-direction: row;
