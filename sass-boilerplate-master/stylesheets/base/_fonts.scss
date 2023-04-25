@@ -1,57 +1,79 @@
-/*Inutile ?*/
-
 body{
     font-family:'Roboto', sans-serif;
 } 
-.homepage{
-    h1{
-    font: 700 24px 'Roboto';
+/*HOMEPAGE*/
+.homepage {
+    h1 {
+        font: 700 24px "Roboto";
     }
+
     h2 {
-    font: 300 18px 'Roboto';
+        font: 300 18px "Roboto";
     }
+
     h3 {
-    font: 500 16px 'Roboto';
+        font: 500 16px "Roboto";
     }
+
     h4 {
-    font: 700 18px 'Roboto';
+        font: 700 18px "Roboto";
     }
-    h5{
-        font: 400 italic 18px 'Shrikhand';
+
+    h5 {
+        font: 400 italic 18px "Shrikhand";
     }
+
     p {
-    font: 300 17px 'Roboto';
+        font: 300 17px "Roboto";
     }
-    .numero-fonctionnement, .btn-nouveau{
-        font: 500 14px 'Roboto';
+
+    .number-functioning {
+        font: 500 14px "Roboto";
     }
+
+    .btn-new {
+        font: 500 14px "Roboto";
+    }
+
     .end-footer {
-    font: 400 16px 'Roboto';
+        font: 400 16px "Roboto";
     }
-    .lettres, .lettres-empty{
-        font: 400 italic 30px 'Shrikhand';
+
+    .letter {
+        font: 400 italic 30px "Shrikhand";
+    }
+
+    .letter-empty {
+        font: 400 italic 30px "Shrikhand";
     }
 }
-.menu{
+/*MENU*/
+.menu {
     h1 {
-    font: 400 italic 28px 'Shrikhand';
+        font: 400 italic 28px "Shrikhand";
     }
+
     h2 {
-    font: 300 16px 'Roboto';
+        font: 300 16px "Roboto";
     }
-    h3, #restaurants{
-    font: 500 18px 'Roboto';
+
+    h3, #restaurants {
+        font: 500 18px "Roboto";
     }
-    .footer-text{
-        font: 500 16px 'Roboto';
+
+    .footer-text {
+        font: 500 16px "Roboto";
     }
+
     p {
-        font:300 15px 'Roboto';
+        font: 300 15px "Roboto";
     }
-    .prix{
-        font:700 15px 'Roboto';
+
+    .price {
+        font: 700 15px "Roboto";
     }
+
     h5 {
-    font: 400 italic 18px 'Shrikhand';
+        font: 400 italic 18px "Shrikhand";
     }
 }

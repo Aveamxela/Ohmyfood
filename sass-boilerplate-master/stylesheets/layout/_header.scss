@@ -1,46 +1,48 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-header{
-    display:flex;
-    flex-direction:column;
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    gap:5px;
+    gap: 5px;
 }
-.homepage{
-    .logo-retour {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 5px;
-}
+/*HOMEPAGE*/
+.homepage {
+    .logo-return {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
     .fa-arrow-left {
         display: none;
     }
 }
-.menu{
-    .logo-retour{
+/*MENU*/
+.menu {
+    .logo-return {
         display: flex;
         align-items: center;
         margin-bottom: 5px;
     }
     .fa-arrow-left {
         display: flex;
-        margin-left:23px;
+        margin-left: 23px;
     }
+
     .logo-menu {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
-.location{
-    display:flex;
+/*LOCATION*/
+.location {
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
     padding: 15px 0 15px 0;
 }
-.fa-location-dot{
-    margin-right:17px;
+
+.fa-location-dot {
+    margin-right: 17px;
 }

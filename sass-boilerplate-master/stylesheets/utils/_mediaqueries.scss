@@ -1,12 +1,12 @@
-@media screen and (min-width:992px) {
-    .fonctionnement-trois {
+@media screen and (min-width:768px) {
+    .functioning3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap:5%;
     }
 
-    .fonctionnement {
+    .functioning {
         width: 320px;
     }
 
@@ -72,6 +72,7 @@
     }
     .background-menu{
         margin: 0px 8%;
+        margin-bottom: -60px;
     }
 
 }

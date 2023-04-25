@@ -1,45 +1,45 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
-footer{
-    padding:22px 25px 22px 25px;
-    display: flex;
-    flex-direction: column;
+/*FOOTER*/
+footer {
+    padding: 22px 25px 22px 25px;
     background-color: #353535;
-    color:white;
-    width: 100%;
+    color: white;
     margin-bottom: -22px;
 }
-.logo{
-    margin:0;
+
+.logo {
+    margin: 0;
 }
-.start-footer{
+
+.start-footer {
     padding-top: 16px;
 }
-.i-text{
+
+.i-text {
     display: flex;
     align-items: center;
-    gap:11px;
+    gap: 11px;
     padding-bottom: 7px;
 }
-.footer-text{
-    margin:0;
+
+.footer-text {
+    margin: 0;
 }
 
-.icone-footer{
+.icone-footer {
     width: 11px;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.end-footer{
+.end-footer {
     display: flex;
     flex-direction: column;
     gap: 7px;
 }
-a>p {
-    color: white;
+
+a {
+    >p {
+        color: white;
+    }
 }

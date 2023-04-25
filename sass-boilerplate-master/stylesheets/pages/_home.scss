@@ -1,22 +1,23 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
-.reservez{
+/*BOOK*/
+.book {
     background-color: $background;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding-top: 40px;
+
+    .h1 {
+        padding: 0 60px 0 60px;
+    }
 }
-.reservez .h1{
-    padding: 0 60px 0 60px;
+
+/*Functioning*/
+.all-functioning {
+    padding: 48px 8% 68px 8%;
 }
-.all-fonctionnement{
-        padding: 48px 8% 68px 8%;
-        
-}
-.fonctionnement {
+
+.functioning {
     background: $background;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -27,29 +28,30 @@
     gap: 23px;
     padding: 28px 38px 28px 0;
 }
-.numero-fonctionnement{
+
+.number-functioning {
     background-color: $main-color;
-    border-radius:20px;
-    position:relative;
-    right:10px;
+    border-radius: 20px;
+    position: relative;
+    right: 10px;
     padding: 4px 8px;
     color: white;
 }
+
 .icone-grey {
     color: $icone-grey;
 }
-.icone-color{
-    color:$main-color;
+
+.icone-color {
+    color: $main-color;
 }
+
+/*RESTAURANTS*/
+
 .all-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.bottom-card-text{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .restaurants{
     background-color: $background;

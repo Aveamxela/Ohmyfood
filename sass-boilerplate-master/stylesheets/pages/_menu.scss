@@ -6,6 +6,17 @@
     bottom: 60px;
     margin-bottom: -60px;
 }
+.menu {
+    .heart {
+        position: absolute;
+        bottom: -12px;
+        right: 20px;
+    }
+
+    .btn {
+        margin: 24px 0 40px 0;
+    }
+}
 .img-header{
     height: 275px;
     object-position: 50% 60%;
@@ -16,18 +27,21 @@
     align-items: center;
     justify-content: space-between;
 }
-.menu h2{
-    margin-top:40px;
-    &:after {
-    content: "";
-    position: relative;
-    left: 0px;
-    bottom: 5px;
-    width: 40px;
-    border-bottom: 3px solid $secondary-color;
-    padding-bottom: 12px;
-    display: block;
-}
+.menu {
+    h2 {
+        margin-top: 40px;
+
+        &:after {
+            content: "";
+            position: relative;
+            left: 0px;
+            bottom: 5px;
+            width: 40px;
+            border-bottom: 3px solid #99E2D0;
+            padding-bottom: 12px;
+            display: block;
+        }
+    }
 }
 .center{
     display: flex;
