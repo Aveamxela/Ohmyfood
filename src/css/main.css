@@ -259,7 +259,6 @@ a > p {
   bottom: 20px;
   right: 25px;
   opacity: 1;
-  overflow: hidden;
 }
 .heart .full {
   font-size: 22px;
@@ -279,7 +278,6 @@ a > p {
 }
 .heart:hover .empty {
   opacity: 0;
-  overflow: hidden;
 }
 
 .menu .empty {
@@ -520,7 +518,7 @@ a > p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 23px;
+  gap: 7%;
   padding: 28px 38px 28px 0;
 }
 
@@ -609,15 +607,6 @@ a > p {
   .book h1 br {
     display: none;
   }
-  .functioning3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5%;
-  }
-  .functioning {
-    width: 320px;
-  }
   .all-card {
     display: flex;
     flex-direction: row;
@@ -680,5 +669,22 @@ a > p {
   .background-menu {
     margin: 0px 8%;
     margin-bottom: -60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .functioning {
+    width: 320px;
+    padding: 28px 0;
+  }
+}
+@media screen and (min-width: 1185px) {
+  .functioning3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5%;
+  }
+  .functioning {
+    width: 320px;
   }
 }
